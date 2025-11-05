@@ -1,0 +1,21 @@
+{
+  "name": "mqtt",
+  "module": "src/index.ts",
+  "private": true,
+  "scripts": {
+    "dev": "bun run ./src/index.ts",
+    "send": "bun run ./src/send.ts"
+  },
+  "type": "module",
+  "dependencies": {
+    "amqplib": "^0.10.9"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0.10.8",
+    "@types/bun": "latest",
+    "@types/node": "^24.10.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
